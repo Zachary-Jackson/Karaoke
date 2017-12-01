@@ -4,4 +4,7 @@
 
 {% block content %}
 <h2>{{ performer }}</h2>
+{% for music in performer.song_set.all %}
+  <p>{{ music }}</p>
+{% endfor %}
 {% endblock %}
